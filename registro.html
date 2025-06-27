@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Registro</title>
+
+	<!-- Fuentes y estilos -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/estilos.css"/>
+</head>
+
+<body>
+
+	<!-- ========== HEADER ========== -->
+	<header>
+		<div class="container-fluid fondo-navegacion">
+			<div class="encabezado-superior p-3 m-2 row justify-content-between align-items-center">
+				
+				<!-- Logo -->
+				<div class="col-3 logo">
+					<a href="index.html" class="texto-link">
+						<div class="d-flex align-items-center justify-content-center h-100">
+							<p>LOGO</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Título central (oculto en móvil) -->
+				<div class="col-6 nombre-titulo-centro d-flex justify-content-center align-items-center">
+					<h2 class="d-none d-md-block">¡Registrate y viaja!</h2>
+				</div>
+
+				<!-- Botón hamburguesa (visible en móvil) -->
+				<div class="col-6 d-flex justify-content-end d-md-none order-md-2 order-1">
+					<button class="navbar-toggler bg-dark border-0 p-2" type="button"
+						data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+						aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+						<span style="color:white;">☰</span> <!-- ⚠️ Considera usar ícono SVG de Bootstrap -->
+					</button>
+				</div>
+
+				<!-- Íconos header (ocultos en móvil) -->
+				<div class="col-3 d-flex justify-content-end align-items-center gap-4 iconos-header">
+					<!-- Avión -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                        <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suitcase2-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 0a.5.5 0 0 0-.5.5V3H4.5A1.5 1.5 0 0 0 3 4.5v9a1.5 1.5 0 0 0 1.003 1.416A1 1 0 1 0 6 15h4a1 1 0 1 0 1.996-.084A1.5 1.5 0 0 0 13 13.5v-9A1.5 1.5 0 0 0 11.5 3H10V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zM4 7V6h8v1z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                        <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17s3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                    </svg>
+
+
+				</div>
+			</div>
+
+			<!-- Navegación principal -->
+			<nav class="navbar navbar-expand-md navbar-dark">
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse" id="navbarContenido">
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="servicios.html">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="registro.html">Registro</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="clientes.html">Clientes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+    <main class="container my-5 main-formulario">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="card shadow-lg rounded-4">
+					<div class="card-body p-5">
+						<h3 class="text-center mb-4">Formulario de Registro de Viaje</h3>
+						<form id="formulario-registro">
+							<div class="mb-3">
+								<label for="nombreCompleto" class="form-label">Nombre completo *</label>
+								<input type="text" class="form-control" id="nombreCompleto" placeholder="Tu nombre" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="email" class="form-label">Correo electrónico *</label>
+								<input type="email" class="form-control" id="email" placeholder="Tu correo" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="destino" class="form-label">Destino de interés *</label>
+								<select class="form-select" id="destino" required>
+									<option selected disabled value="">Selecciona un destino...</option>
+									<option>París, Francia</option>
+									<option>Tokyo, Japón</option>
+									<option>Riviera Maya, México</option>
+									<option>Roma, Italia</option>
+									<option>Barcelona, España</option>
+									<option>New York, EE.UU.</option>
+									<option>Dubai, Emiratos Árabes</option>
+									<option>Bangkok, Tailandia</option>
+									<option>Buenos Aires, Argentina</option>
+									<option>Londres, Reino Unido</option>
+								</select>
+							</div>
+
+							<div class="mb-3">
+								<label for="personas" class="form-label">Número de personas *</label>
+								<input type="number" class="form-control" id="personas" min="1" required>
+							</div>
+
+							<div class="mb-3">
+								<label for="fecha" class="form-label">Fecha tentativa de viaje *</label>
+								<input type="date" class="form-control" id="fecha" >
+							</div>
+
+							<div class="mb-3">
+								<label for="comentarios" class="form-label">Comentarios adicionales</label>
+								<textarea class="form-control" id="comentarios" rows="4" placeholder="Opcional..."></textarea>
+							</div>
+
+							<div class="text-center">
+								<button type="submit" class="btn btn-tarjeta btn-primary px-5 py-2">Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center mt-4">
+			<button type="button" class="btn btn-success px-4 py-2" id="btnExportar">Exportar a TXT</button>
+		</div>
+	</main>
+
+	<!-- ========== FOOTER ========== -->
+	<footer>
+		<div class="d-flex align-items-center justify-content-center p-3">
+			<p>&copy; Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<!-- ========== SCRIPTS ========== -->
+	<script src="js/script.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

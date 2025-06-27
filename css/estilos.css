@@ -1,0 +1,348 @@
+/* ============================
+   Variables
+============================ */
+:root {
+  --color-principal: #114c24;
+  --color-input: #539731;
+  --color-input-hover: #335d1d;
+  --color-texto-claro: #c4c3c2;
+  --color-texto-oscuro: #171717;
+}
+
+/* ============================
+   Reset General
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================
+   Body
+============================ */
+body {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 130px;
+  background-image: url('../img/viajes3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ============================
+   Header
+============================ */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-principal);
+  color: var(--color-texto-claro);
+}
+
+.logo {
+  background-color: white;
+  color: var(--color-principal);
+  border-radius: 20px;
+  width: 150px;
+  height: 75px;
+}
+
+.logo p {
+  color: var(--color-input-hover);
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.encabezado-superior {
+  position: relative;
+}
+
+.nombre-titulo-centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nombre-titulo-centro h2 {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.iconos-header svg {
+  height: 30px;
+  width: 30px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggler {
+  height: 50px;
+  width: 50px;
+}
+
+/* ============================
+   Navegación
+============================ */
+.navbar-nav,
+.navbar-nav .nav-link {
+  color: var(--color-texto-claro);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--color-input-hover);
+  color: white;
+  border-radius: 5px;
+}
+
+.texto-link {
+  text-decoration: none;
+}
+
+/* ============================
+   Carrusel
+============================ */
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+}
+
+.carousel-caption {
+  bottom: 25%;
+}
+
+.bg-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-caption .btn {
+  background-color: var(--color-input);
+  border: none;
+}
+
+.carousel-caption .btn:hover {
+  background-color: var(--color-input-hover);
+}
+
+/* ============================
+   Main
+============================ */
+main {
+  margin: 50px 0;
+}
+
+.container-main {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  width: 100%;
+  padding: 30px;
+}
+
+.info-nosotros {
+  border-radius: 15px;
+  background-color: #ffffffee;
+  padding: 1.5rem;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* ============================
+   Cards
+============================ */
+.card {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #ffffffcc;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================
+   Botón Reservar
+============================ */
+a.boton-reservar {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  line-height: normal;
+}
+
+
+.boton-reservar {
+  border: none;
+  border-radius: 15px;
+  background: var(--color-input);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 30%;
+  height: 10vh;
+  max-width: 300px;
+  min-width: 150px;
+  min-height: 40px;
+}
+
+.boton-reservar:hover {
+  background-color: var(--color-input-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  color: var(--color-texto-claro);
+}
+
+.paquetes{
+    padding-top: 50px;
+}
+
+.card h3 {
+  font-weight: 700;
+}
+
+
+
+.btn-tarjeta{
+    background-color: var(--color-input);
+    border: none;
+}
+
+.btn-tarjeta:hover{
+    background-color: var(--color-input-hover);
+}
+
+.main-formulario{
+    padding-top: 50px;
+}
+
+.texto-fondo{
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white; 
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+/* ============================
+   Footer
+============================ */
+footer {
+  width: 100%;
+  background-color: var(--color-principal);
+  padding-top: 1rem;
+  color: var(--color-texto-claro);
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* ============================
+   Media Queries
+============================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+
+  .logo p {
+    font-size: 20px;
+  }
+
+  .nombre-titulo-centro {
+    display: none;
+  }
+
+  .iconos-header svg {
+    display: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .nombre-titulo-centro h2 {
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+  }
+
+  .boton-reservar {
+    font-size: 2rem;
+    width: 50%;
+    padding: 8px 20px;
+  }
+
+  .encabezado-superior {
+    justify-content: space-between;
+  }
+
+  .encabezado-superior > div {
+    flex: 0 auto 0;
+  }
+
+  .encabezado-superior .col-6 {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .paquetes{
+    padding-top:0;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1100;
+  }
+}
+
+@media (max-width: 480px) {
+  .boton-reservar {
+    width: 80%;
+    height: 7vh;
+    padding: 6px 15px;
+  }
+}

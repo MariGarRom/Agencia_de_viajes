@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Viajes Tilin</title>
+
+	<!-- ========== FUENTES Y ESTILOS ========== -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+
+	<!-- ========== HEADER ========== -->
+	<header>
+		<div class="container-fluid fondo-navegacion">
+			<div class="encabezado-superior p-3 m-2 row justify-content-between align-items-center">
+				
+				<!-- Logo -->
+				<div class="col-3 logo">
+					<a href="index.html" class="texto-link">
+						<div class="d-flex align-items-center justify-content-center h-100">
+							<p>LOGO</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Título central (oculto en móvil) -->
+				<div class="col-6 nombre-titulo-centro d-flex justify-content-center align-items-center">
+					<h2 class="d-none d-md-block">Viajando con Tilin</h2>
+				</div>
+
+				<!-- Botón hamburguesa (visible en móvil) -->
+				<div class="col-6 d-flex justify-content-end d-md-none order-md-2 order-1">
+					<button class="navbar-toggler bg-dark border-0 p-2" type="button"
+						data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+						aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+						<span style="color:white;">☰</span>
+					</button>
+				</div>
+
+				<!-- Íconos header (ocultos en móvil) -->
+				<div class="col-3 d-flex justify-content-end align-items-center gap-4 iconos-header">
+					<!-- Avión -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-airplane-fill" viewBox="0 0 16 16">
+						<path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849" />
+					</svg>
+
+					<!-- Maleta -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-suitcase2-fill" viewBox="0 0 16 16">
+						<path d="M6.5 0a.5.5 0 0 0-.5.5V3H4.5A1.5 1.5 0 0 0 3 4.5v9a1.5 1.5 0 0 0 1.003 1.416A1 1 0 1 0 6 15h4a1 1 0 1 0 1.996-.084A1.5 1.5 0 0 0 13 13.5v-9A1.5 1.5 0 0 0 11.5 3H10V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zM4 7V6h8v1z" />
+					</svg>
+
+					<!-- Auto -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-car-front-fill" viewBox="0 0 16 16">
+						<path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848Z" />
+					</svg>
+				</div>
+			</div>
+
+			<!-- Menú de navegación -->
+			<nav class="navbar navbar-expand-md navbar-dark">
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse" id="navbarContenido">
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="servicios.html">Servicios</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="registro.html">Registro</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="clientes.html">Clientes</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- ========== CARRUSEL ========== -->
+	<div id="carrusel-inicio" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+
+			<!-- Slide 1 -->
+			<div class="carousel-item active hero-slide" style="background-image: url('img/viajes1.jpg');">
+				<div class="carousel-caption text-start">
+					<h1 class="display-3 fw-bold">Bienvenido</h1>
+					<p class="lead bg-caption">Descubre lugares increíbles y ofertas exclusivas.</p>
+					<a class="btn btn-primary btn-lg" href="#reciente">Explorar</a>
+				</div>
+			</div>
+
+			<!-- Slide 2 -->
+			<div class="carousel-item hero-slide" style="background-image: url('img/viajes2.jpg');">
+				<div class="carousel-caption text-start">
+					<h1 class="display-3 fw-bold">Atrévete</h1>
+					<p class="lead bg-caption">Encuentra aventuras nuevas y divertidas.</p>
+					<a class="btn btn-primary btn-lg" href="#reciente">Buscar</a>
+				</div>
+			</div>
+
+			<!-- Slide 3 -->
+			<div class="carousel-item hero-slide" style="background-image: url('img/viajes4.jpeg');">
+				<div class="carousel-caption text-start">
+					<h1 class="display-3 fw-bold">Viaja</h1>
+					<p class="lead bg-caption">Confía en nosotros para hacer de tus vacaciones una experiencia única.</p>
+					<a class="btn btn-primary btn-lg" href="#reciente">Explorar</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controles del carrusel -->
+		<button class="carousel-control-prev" type="button" data-bs-target="#carrusel-inicio" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carrusel-inicio" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</button>
+	</div>
+
+	<!-- ========== CONTENIDO PRINCIPAL ========== -->
+	<main>
+		<section class="container container-main text-center">
+
+			<!-- Sección Sobre Nosotros -->
+			<div class="info-nosotros p-4 mx-auto">
+				<h3>Sobre Nosotros</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc sapien, sollicitudin non mauris id, pharetra commodo eros. Duis tincidunt magna a nibh egestas tempor. Donec in consequat quam. Morbi sapien ex, aliquam id commodo at, dignissim condimentum tortor. Aliquam odio nisi, vulputate eu purus vitae, porta viverra dolor.</p>
+			</div>
+
+			<!-- Misión y Visión -->
+			<div class="row justify-content-center">
+				
+				<!-- Misión -->
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card m-3">
+						<div class="card-body">
+							<h5 class="card-title">Misión</h5>
+							<p class="card-text">Nullam auctor nisl nisl, a dictum nibh rutrum sed. Duis tincidunt sodales velit, ut semper quam tempus aliquam. Aenean quis pulvinar risus, vitae convallis justo. Nullam ac tristique ex, eu ultrices orci.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Visión -->
+				<div class="col-md-4 d-flex justify-content-center">
+					<div class="card m-3">
+						<div class="card-body">
+							<h5 class="card-title">Visión</h5>
+							<p class="card-text">Nunc condimentum nisi non leo convallis pretium consequat in est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Botón Reservar -->
+		<div class="text-center my-4">
+			<a href="registro.html" class="boton-reservar">Reservar ahora</a>
+		</div>
+	</main>
+
+	<!-- ========== FOOTER ========== -->
+	<footer>
+		<div class="d-flex align-items-center justify-content-center p-3">
+			<p>&copy; Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<!-- ========== SCRIPTS ========== -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
